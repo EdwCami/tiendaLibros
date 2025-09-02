@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage"/>
+
 
     <application
         android:allowBackup="true"
@@ -14,6 +23,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BookStore"
         tools:targetApi="31">
+        <activity
+            android:name=".Vendedor.Productos.AgregarProductosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SeleccionarTipoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Cliente.LoginClienteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Cliente.RegistroClienteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vendedor.LoginVendedorActivity"
+            android:exported="false" />
         <activity
             android:name=".Vendedor.RegistroVendedorActivity"
             android:exported="false" />
@@ -30,7 +54,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Cliente.MainActivityCliente"
             android:exported="true" />
     </application>
 

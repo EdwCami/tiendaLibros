@@ -49,7 +49,10 @@ dependencies {
     implementation(libs.lottie)
     implementation(libs.firebaseAuth)
     implementation(libs.firebaseDatabase)
+    implementation(libs.imagePicker)
+    implementation(libs.glide)
     testImplementation(libs.junit)
+    implementation(libs.storage)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }

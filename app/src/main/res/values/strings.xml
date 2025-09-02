@@ -4,13 +4,28 @@
     <string name="open_drawer">Open drawer</string>
     <string name="close_drawer">Close drawer</string>
 
+    <string name="tipoVendedor">Vendedor</string>
+    <string name="tipoCliente">Cliente</string>
+
+    <!--NavigationDrawer Vendedor-->
     <string name="op_inicio_V">Inicio</string>
     <string name="op_mi_tienda_V">Mi Tienda</string>
+    <string name="op_categorias_v">Categorías</string>
     <string name="op_resenia_V">Reseñas</string>
     <string name="op_cerrar_sesion_V">Cerrar sesión</string>
 
+    <!--NavigationDrawer Cliente-->
+    <string name="op_inicio_c">Inicio</string>
+    <string name="op_mi_perfil_c">Mi Perfil</string>
+    <string name="op_cerrar_sesion_c">Cerrar sesión</string>
+
+    <!--Bottom Navigation Bar Vendedor-->
     <string name="op_mis_productos_V">Mis productos</string>
     <string name="op_mis_ordenes_V">Órdenes</string>
+
+    <!--Bottom Navigation Bar Cliente-->
+    <string name="op_tienda_c">Tienda</string>
+    <string name="op_mis_ordenes_c">Mis órdenes</string>
 
     <string name="txt_bienvenida">Bienvenido(a)</string>
 
@@ -21,6 +36,46 @@
     <string name="etPassword">Password</string>
     <string name="etCPassword">Confirmar password</string>
     <string name="btnRegistrarV">Registrarme</string>
+
+    <!--Registro de cliente-->
+    <string name="txtRegistroC">Registro de cliente</string>
+    <string name="etNombresC">Nombres completos</string>
+    <string name="btnRegistrarC">Registrarme</string>
+
+    <!--Login de vendedor-->
+    <string name="txtLoginV">Login de vendedor</string>
+    <string name="btnLoginV">Ingresar</string>
+    <string name="txtNoCuenta">¿No tienes una cuenta?</string>
+    <string name="tvRegistrarV">Registrarme</string>
+
+    <!--Login de cliente-->
+    <string name="txtLoginC">Login de cliente</string>
+    <string name="btnLoginC">Ingresar</string>
+    <string name="tvRegistrarC">Registrarme</string>
+
+    <!--Productos-->
+    <string name="txtAgregarProductos">Agregar productos</string>
+    <string name="etNombresP">Nombre del producto</string>
+    <string name="etDescripciónP">Descripción</string>
+    <string name="Categoria">Categoría</string>
+    <string name="etPrecioP">Precio</string>
+    <string name="txtDescuento">Descuento</string>
+    <string name="etPrecioConDescuentoP">Precio con descuento apli.</string>
+    <string name="etNotaDescuentoP">Ejm: 10%Desc.</string>
+    <string name="btnAgregarProducto">Agregar producto</string>
+
+    <!--Agregar categorías-->
+    <string name="etCategoria">Ingrese categoría</string>
+    <string name="btnAgregarCat">Agregar categoria</string>
+
+    <!--Item categoría - v-->
+    <string name="item_nombre_c_v">Nombre de categoría</string>
+
+    <!--Item productos-->
+    <string name="item_nombre_p">Nombre del producto</string>
+    <string name="item_precio_p">00</string>
+    <string name="item_precio_p_desc">00</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="todo">TODO</string>

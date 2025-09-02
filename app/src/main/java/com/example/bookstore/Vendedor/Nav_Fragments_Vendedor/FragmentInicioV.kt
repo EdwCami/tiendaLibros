@@ -1,6 +1,7 @@
 package com.example.bookstore.Vendedor.Nav_Fragments_Vendedor
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,6 +12,7 @@ import androidx.annotation.UiContext
 import com.example.bookstore.R
 import com.example.bookstore.Vendedor.Bottom_Nav_Fragments_Vendedor.FragmentMisProductosV
 import com.example.bookstore.Vendedor.Bottom_Nav_Fragments_Vendedor.FragmentOrdenesV
+import com.example.bookstore.Vendedor.Productos.AgregarProductosActivity
 import com.example.bookstore.databinding.FragmentInicioVBinding
 
 class FragmentInicioV : Fragment() {
@@ -42,11 +44,7 @@ class FragmentInicioV : Fragment() {
         binding.bottomNavigation.selectedItemId = R.id.op_mis_productos_V
 
         binding.addFab.setOnClickListener {
-            Toast.makeText(
-                mContext,
-                "Has precionado en el botón flotante",
-                Toast.LENGTH_SHORT
-            ).show()
+           startActivity(Intent(context, AgregarProductosActivity::class.java))
 
         }
 

@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Vendedor.RegistroVendedorActivity">
-    
+    tools:context=".Vendedor.LoginVendedorActivity">
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="15dp"
-        android:layout_marginTop="100dp">
-        
+        android:layout_marginTop="150dp">
+
         <TextView
-            android:text="@string/txtRegistroV"
+            android:text="@string/txtLoginV"
+            android:layout_gravity="center"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -28,23 +28,8 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:src="@drawable/vendedor"
-            android:layout_width="200dp"
+            android:layout_width="150dp"
             android:layout_height="100dp"/>
-
-        <!--Nombres completos-->
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/etNombresV"
-                android:hint="@string/etNombresV"
-                android:drawableStart="@drawable/ico_nombres"
-                android:drawablePadding="5dp"
-                android:inputType="textPersonName|textCapWords"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-        </com.google.android.material.textfield.TextInputLayout>
 
         <!--Email-->
         <com.google.android.material.textfield.TextInputLayout
@@ -55,13 +40,14 @@
                 android:id="@+id/etEmailV"
                 android:hint="@string/etEmailV"
                 android:drawableStart="@drawable/ico_email"
-                android:drawablePadding="5dp"
+                android:drawablePadding="10dp"
                 android:inputType="textEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!--password-->
+
+        <!--Password-->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -71,39 +57,45 @@
                 android:id="@+id/etPasswordV"
                 android:hint="@string/etPassword"
                 android:drawableStart="@drawable/ico_password"
-                android:drawablePadding="5dp"
+                android:drawablePadding="10dp"
                 android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!--Confirmar password-->
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:passwordToggleEnabled="true">
-
-            <EditText
-                android:id="@+id/etCPasswordV"
-                android:hint="@string/etCPassword"
-                android:drawableStart="@drawable/ico_password"
-                android:drawablePadding="5dp"
-                android:inputType="textPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <!--Registrar vendedor -->
+        <!--Botón de Login-->
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnRegistrarV"
-            android:text="@string/btnRegistrarV"
-            app:cornerRadius="8dp"
+            android:id="@+id/btnLoginV"
+            android:text="@string/btnLoginV"
             android:textAllCaps="true"
+            app:cornerRadius="8dp"
             android:layout_marginTop="15dp"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
+        <!--Pregunta-->
+        <TextView
+            android:text="@string/txtNoCuenta"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!--Registrar un vendedor-->
+        <TextView
+            android:id="@+id/tvRegistrarV"
+            android:text="@string/tvRegistrarV"
+            android:textStyle="bold"
+            android:textColor="@color/celeste_oscuro"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-</ScrollView>
+</RelativeLayout>
